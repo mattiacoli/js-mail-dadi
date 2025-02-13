@@ -28,20 +28,21 @@ let mail = ['mattia@mail.com',
 
 // chiedere all'utente la sua mail
 let userMail = prompt('Inserisci la tua mail')
-let thisMail = true
+let mailFound= false;
 
 
  // verificare che la sua mail sia presente nell'elenco
  for (let i = 0; i < mail.length; i++) {
-   thisMail = mail[i];
-    //stampa messaggio appropriato sull'esito
- 
+   mailFound = mail[i];      
+   if (mailFound === userMail){
+    mailFound = true;
+   }
  }
 
-  if (thisMail === userMail) {
+  if (mailFound = true ) {
      alert("Congratulazioni sei stato invitato al party!");
   
-   } else if (thisMail !== userMail) {
+   } else  {
      alert('Spiacenti non sei nella lista degli invitati');
       }
 
