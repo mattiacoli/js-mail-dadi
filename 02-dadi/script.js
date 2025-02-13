@@ -16,21 +16,21 @@ Prima di partire a scrivere codice poniamoci qualche domanda per individuare gli
 
 // scegliere un numero randomico per user
 const userNumb = Math.floor(Math.random()* 6 +1)
-console.log(userNumb);
+alert(`your number is:  ${userNumb}`);
 
 // scegliere numero randomico per il pc
 const pcNumb = Math.floor(Math.random()* 6 +1)
-console.log(pcNumb);
+alert(` PC number is:  ${pcNumb}`);
 
 //stabilire il vincitore in base a chi fa il punteggio piu` alto
 if (userNumb === pcNumb ){
-  console.log('Pareggio!');
+  alert('Pareggio!');
   
 } else if (userNumb > pcNumb){
-  console.log('Hai vinto!');
+  alert('Hai vinto!');
   
 } else {
-  console.log('Hai perso , ritenta sarai piu fortunato');
+  alert('Hai perso , ritenta sarai piu fortunato');
   
 }
 
